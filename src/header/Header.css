@@ -1,0 +1,12 @@
+@font-face {
+    font-family: pokefont;
+    src: url(../assets/fonts/Pokemon\ Solid.ttf);
+}
+
+h1{
+    font-family: pokefont;
+    color: var(--yellow);
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
+}

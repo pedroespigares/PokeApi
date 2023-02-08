@@ -1,0 +1,32 @@
+.card{
+    border: none;
+    border-radius: 0;
+    background-color: var(--black);
+}
+
+.card-title{
+    color: white;
+}
+
+.modal-content{
+    background-color: var(--black);
+    color: white;
+    border: 1px solid var(--yellow);
+}
+
+.modal-content h3{
+    color: var(--yellow);
+}
+
+.modal-content span{
+    color: var(--yellow);
+}
+
+.btn-close{
+    background-color: var(--yellow);
+    transition: 0.2s ease-in-out;
+}
+
+.btn-close:hover{
+    transition: 0.2s;
+}

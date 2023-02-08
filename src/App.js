@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import  Header  from "./header/Header";
 import  SinglePokemon  from './single-pokemon/SinglePokemon';
+import  Footer from './footer/Footer';
 import './App.css';
 
 function App() {
@@ -38,7 +39,8 @@ function App() {
         ))}
         </div>
       </div>
-      <button className="btn btn-primary"onClick={loadMore}>Load more</button>
+      <button className="btn mt-5 mb-5"onClick={loadMore}>Obtener más</button>
+      <Footer />
     </div>
   );
 }
