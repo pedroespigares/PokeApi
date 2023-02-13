@@ -4,7 +4,7 @@ nav[class~="navbar"]{
 
 a[class~="nav-link"]{
     color: white !important;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     font-weight: bolder !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
@@ -19,9 +19,8 @@ a.nav-link:hover{
 }
 
 .navbar-brand{
-    color: white;
+    color: var(--yellow) !important;
     font-size: 2rem;
-    padding: 0;
 }
 
 .navbar-toggler{

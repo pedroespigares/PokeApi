@@ -1,0 +1,47 @@
+img.pokemon_types{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+
+table.pokemon_stats{
+    width: 50%;
+    border-collapse: collapse;
+    color: white
+}
+
+table.pokemon_stats tr{
+    border-bottom: 1px solid white;
+    text-align: left;
+}
+
+table.pokemon_stats th{
+    padding: 10px 0;
+    text-align: left;
+    color: var(--yellow);
+    font-size: 1.5rem;
+}
+
+table.pokemon_stats tr:last-child{
+    border-bottom: none;
+}
+
+table.pokemon_stats td:first-child{
+    padding: 10px 0;
+    color: var(--yellow);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table.pokemon_stats td:last-child{
+    padding: 10px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-text span{
+    color: var(--yellow);
+    font-weight: bold;
+}

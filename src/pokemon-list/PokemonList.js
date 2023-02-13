@@ -33,7 +33,7 @@ function PokemonList(){
         ))}
         </div>
       </div>
-      <button className="btn mt-5 mb-5"onClick={loadMore}>Obtener más</button>
+      <button className="btn mt-5 mb-5"onClick={loadMore}>Get more</button>
     <Footer />
     </>
 }

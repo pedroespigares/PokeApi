@@ -24,8 +24,7 @@ function SinglePokemon({ pokemonURL}) {
                 <img src={pokemonData.sprites.front_default} className="card-img-top" alt={pokemonData.name}/>
                 <div className="card-body">
                     <h4 className="card-title fs-2">{pokemonData.name.toUpperCase()}</h4>
-                    <h6 className="card-subtitle mb-2 text-muted">{pokemonData.types[0].type.name.toUpperCase()}</h6>
-                    <Link to={`/pokemon/${pokemonData.name}`} className="btn btn-primary">Saber más</Link>
+                    <Link to={`/pokemon/${pokemonData.name}`} className="btn btn-primary">Know more</Link>
                 </div>
             </div>
             </>
