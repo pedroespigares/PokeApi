@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="pokemons" element={<PokemonList/>}></Route>
-          <Route path="pokemon/:pokemonId" element={<PokemonDetail/>}></Route>
+          <Route path="pokemon/:pokemonName" element={<PokemonDetail/>}></Route>
           <Route path="play" element={<Play/>}></Route>
           {/* Elemento 404 es con path * */}
           {/* <Route path="*" element={<h1>404 Not Found</h1>}></Route> */}
