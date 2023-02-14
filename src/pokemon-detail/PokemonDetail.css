@@ -19,7 +19,6 @@ table.pokemon_stats th{
     padding: 10px 0;
     text-align: left;
     color: var(--yellow);
-    font-size: 1.5rem;
 }
 
 table.pokemon_stats tr:last-child{

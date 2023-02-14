@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import  Header  from "../header/Header";
 import  SinglePokemon  from '../single-pokemon/SinglePokemon';
-import  Footer from '../footer/Footer';
 import "./PokemonList.css";
 
 function PokemonList(){
@@ -24,7 +22,6 @@ function PokemonList(){
     }
 
     return <>
-    <Header />
       <div className="container">
       <div className="row">
         {
@@ -33,8 +30,7 @@ function PokemonList(){
         ))}
         </div>
       </div>
-      <button className="btn mt-5 mb-5"onClick={loadMore}>Get more</button>
-    <Footer />
+      <button className="btn mt-5 mb-5 fs-4" onClick={loadMore}>Get more</button>
     </>
 }
 

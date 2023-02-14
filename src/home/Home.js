@@ -1,17 +1,13 @@
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
-
 import './Home.css';
 
 function Home(){
     return <>
-    <Header />
     <div className="card lg-3 mt-5 pt-5 mb-5 pb-5">
         <div className="row g-0">
         <div className="col-lg-6 ps-5 d-flex justify-content-center align-items-center">
             <div className="card-body">
             <h5 className="card-title">PokeApi Game</h5>
-            <p className="card-text mt-4 mb-4">On this page you can consult your favorite pokemon and even play mini-games with them!</p>
+            <p className="card-text mt-4 mb-4 fs-4">On this page you can consult your favorite pokemon and even play mini-games with them!</p>
             </div>
         </div>
         <div className="col-lg-6">
@@ -34,7 +30,7 @@ function Home(){
                     </div>
                     <div className="col-md-8 d-flex flex-column justify-content-center align-items-center">
                       <div className="mini-card-body">
-                        <h5 className="mini-card-title">Check your favourites Pokemons</h5>
+                        <h5 className="mini-card-title fs-1">Check your favourites Pokemons</h5>
                         <p className="mini-card-text">Know more about them and their abilities!</p>
                       </div>
                     </div>
@@ -52,7 +48,7 @@ function Home(){
                       </div>
                       <div className="col-md-8 d-flex flex-column justify-content-center align-items-center">
                         <div className="mini-card-body">
-                          <h5 className="mini-card-title">Play mini-games</h5>
+                          <h5 className="mini-card-title fs-1">Play mini-games</h5>
                           <p className="mini-card-text">In this page we offer differents mini-games with Pokemons!</p>
                         </div>
                       </div>
@@ -71,7 +67,7 @@ function Home(){
                       </div>
                       <div className="col-md-8 d-flex flex-column justify-content-center align-items-center">
                         <div className="mini-card-body">
-                          <h5 className="mini-card-title">Curiosities</h5>
+                          <h5 className="mini-card-title fs-1">Curiosities</h5>
                           <p className="mini-card-text">We offer you some curiosities about the pokedex</p>
                         </div>
                       </div>
@@ -88,7 +84,6 @@ function Home(){
       </div>
     </div>
     </div>
-    <Footer />
     </>
 }
 

@@ -15,3 +15,115 @@ h1.play_title, h2.play_subtitle {
     height: 100%;
     background-color: var(--black);
 }
+
+#refresh{
+    scale: 3;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+#refresh:hover{
+    cursor: pointer;
+    scale: 3.2;
+    transition: 0.2s;
+}
+
+.who_pokemon_imagen{
+    position: relative;
+    top: 52%;
+    right: 12%;
+    filter: contrast(0%) brightness(0%);
+    transition: 0.3s ease-in-out;
+}
+
+.who_pokemon_imagen_correct{
+    position: relative;
+    top: 52%;
+    right: 12%;
+    filter: contrast(100%) brightness(100%);
+}
+
+.who_pokemon_card{
+    background-color: #F2F3F4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    z-index: 1;
+}
+
+.who_pokemon_check_button{
+    background-color: #ee1515;
+    border-radius: 0.8rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.who_pokemon_check_button:hover{
+    background-color: #f00000;
+    transition: 0.2s;
+}
+
+.who_pokemon__ng_button{
+    background-color: #196EEF;
+    border-radius: 0.8rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.who_pokemon__ng_button:hover{
+    background-color: rgb(34, 123, 248);
+    transition: 0.2s;
+}
+
+.who_pokemon_hint{
+    grid-area: 3 / 1 / 4 / 3;
+    background-color: var(--black);
+    color: var(--yellow);
+    transition: 0.2s;
+    border: none;
+}
+
+.who_pokemon_hint:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+img.pokemon_types_hint{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.correct{
+    background-color: green;
+    color: var(--black);
+}
+
+.incorrect{
+    display: none;
+    color: var(--black);
+}
+
+.who_pokemon_input{
+    color: var(--black);
+    padding: 0.8rem;
+    z-index: 10;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.who_pokemon_input:focus{
+    outline: none;
+}

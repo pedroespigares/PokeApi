@@ -30,3 +30,11 @@
 .btn-close:hover{
     transition: 0.2s;
 }
+
+.fa-question{
+    scale: 2.5 !important;
+}
+
+.fa-question:hover{
+    scale: 3 !important;
+}
