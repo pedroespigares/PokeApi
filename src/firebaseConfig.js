@@ -1,6 +1,7 @@
  // Import the functions you need from the SDKs you need
  import { initializeApp } from "firebase/app";
  import { getFirestore } from "firebase/firestore";
+ import { getAuth } from "firebase/auth";
  // TODO: Add SDKs for Firebase products that you want to use
  // https://firebase.google.com/docs/web/setup#available-libraries
  // Your web app's Firebase configuration
@@ -15,6 +16,12 @@
  // Initialize Firebase
  
  const app = initializeApp(firebaseConfig);
+
  // Export firestore database
  // It will be imported into your react app whenever it is needed
  export const db = getFirestore(app);
+ export const auth = getAuth(app);
+ export default app;
+
+//  LOS METODOS DE AUTH SE UTILIZAN EN EL COMPONENTE QUE SE QUIERA UTILIZAR
+// Para enviar al usuario a otra vista se utiliza navigate (hay q importarlo)

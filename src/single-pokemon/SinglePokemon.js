@@ -33,7 +33,7 @@ function SinglePokemon({ pokemonURL}) {
                         )
                     })}
                     </div>
-                    <Link to={`/pokemon/${pokemonData.name}`}><i class="fa-solid fa-question pt-3"></i></Link>
+                    <Link to={`/pokemon/${pokemonData.name}`}><i className="fa-solid fa-question pt-3"></i></Link>
                 </div>
             </div>
             </>
