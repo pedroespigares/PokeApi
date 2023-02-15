@@ -11,7 +11,7 @@ function Home(){
             </div>
         </div>
         <div className="col-lg-6">
-            <img src={require("../assets/images/pikachu.png")} className="img-fluid" alt="Pikachu" />
+            <img src={require("../assets/images/pikachu_gif.gif")} className="img-fluid w-50" alt="Pikachu" />
         </div>
         </div>
     </div>
@@ -26,7 +26,7 @@ function Home(){
                 <div className="card mb-3">
                   <div className="row g-0">
                     <div className="col-md-4 d-flex justify-content-center align-items-center pe-5">
-                      <img src={require("../assets/images/types/electric.png")} className="img-fluid w-75" alt="Electric type" />
+                      <img src={require("../assets/images/amarillo.png")} className="img-fluid w-75" alt="Electric type" />
                     </div>
                     <div className="col-md-8 d-flex flex-column justify-content-center align-items-center">
                       <div className="mini-card-body">
@@ -44,7 +44,7 @@ function Home(){
                   <div className="card mb-3">
                     <div className="row g-0">
                       <div className="col-md-4 d-flex justify-content-center align-items-center pe-5">
-                      <img src={require("../assets/images/types/fairy.png")} className="img-fluid w-75" alt="Fairy type" />
+                      <img src={require("../assets/images/rojo.png")} className="img-fluid w-75" alt="Fairy type" />
                       </div>
                       <div className="col-md-8 d-flex flex-column justify-content-center align-items-center">
                         <div className="mini-card-body">
@@ -63,7 +63,7 @@ function Home(){
                   <div className="card mb-3">
                     <div className="row g-0">
                       <div className="col-md-4 d-flex justify-content-center align-items-center pe-5">
-                      <img src={require("../assets/images/types/water.png")} className="img-fluid w-75" alt="Water type" />
+                      <img src={require("../assets/images/azul.png")} className="img-fluid w-75" alt="Water type" />
                       </div>
                       <div className="col-md-8 d-flex flex-column justify-content-center align-items-center">
                         <div className="mini-card-body">

@@ -41,7 +41,7 @@ a.nav-link:hover{
     scale: 2;
     color: var(--yellow);
     padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .btn{
@@ -51,6 +51,7 @@ a.nav-link:hover{
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     font-weight: bolder;
+    font-size: 1.4rem !important;
   }
   
 .btn:hover{

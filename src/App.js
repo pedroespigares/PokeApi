@@ -7,6 +7,8 @@ import PokemonDetail from './pokemon-detail/PokemonDetail';
 import Play from './play/Play';
 import Signup from './signup/Signup';
 import Login from './login/Login';
+import NotFound from './not-found/NotFound';
+import Leaderboard from './leaderboard/Leaderboard';
 // import ListaDatos from './accesoBD/listaDatos';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
@@ -36,9 +38,9 @@ function App() {
           <Route path="pokemon/:pokemonName" element={<PokemonDetail/>}></Route>
           <Route path="play" element={<Play/>}></Route>
           <Route path="signup" element={<Signup/>}></Route>
-          <Route path="login" element={<Login/>}></Route>            
-          {/* Elemento 404 es con path * */}
-          {/* <Route path="*" element={<h1>404 Not Found</h1>}></Route> */}
+          <Route path="login" element={<Login/>}></Route>
+          <Route path="leaderboard" element={<Leaderboard/>}></Route>
+          <Route path="*" element={<NotFound/>}></Route>
         </Routes>
       <Footer/>
       </BrowserRouter>

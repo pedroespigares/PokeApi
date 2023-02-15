@@ -16,16 +16,18 @@ h1.play_title, h2.play_subtitle {
     background-color: var(--black);
 }
 
-#refresh{
-    scale: 3;
-    transition: 0.2s;
-    z-index: 10;
-}
-
 #refresh:hover{
     cursor: pointer;
     scale: 3.2;
     transition: 0.2s;
+}
+
+#user_points{
+    color: white;
+}
+
+#points{
+    color: #196EEF;
 }
 
 .who_pokemon_imagen{
@@ -63,6 +65,7 @@ h1.play_title, h2.play_subtitle {
     padding: 0.8rem;
     cursor: pointer;
     transition: 0.2s;
+    font-size: 1.2rem !important;
 }
 
 .who_pokemon_check_button:hover{
@@ -79,6 +82,7 @@ h1.play_title, h2.play_subtitle {
     padding: 0.8rem;
     cursor: pointer;
     transition: 0.2s;
+    font-size: 1.2rem !important;
 }
 
 .who_pokemon__ng_button:hover{
@@ -100,10 +104,18 @@ h1.play_title, h2.play_subtitle {
     transition: 0.2s;
 }
 
-img.pokemon_types_hint{
+.pokemon_types_hint{
     width: 100px;
     height: 100px;
     display: none;
+}
+
+p.who_pokemon_hint_text{
+    color: var(--yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .correct{
@@ -122,6 +134,7 @@ img.pokemon_types_hint{
     z-index: 10;
     border: none;
     border-radius: 0.8rem;
+    font-size: 1.2rem !important;
 }
 
 .who_pokemon_input:focus{

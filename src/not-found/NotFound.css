@@ -1,0 +1,27 @@
+p.notfound-par{
+    color: white;
+    font-family: Gotham;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+main{
+    background-color: var(--black);
+    height: 84.9vh;
+}
+
+a.notfound-link{
+    color: var(--yellow);
+    font-family: Gotham;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a.notfound-link:hover{
+    font-size: 1.6rem;
+    transition: 0.2s;
+}
