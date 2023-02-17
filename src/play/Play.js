@@ -43,10 +43,13 @@ function Play() {
         if (typedPokemon.toLowerCase() === selectedPokemonData.name) {
             setTypedPokemon("");
             document.getElementsByClassName("who_pokemon_imagen")[0].classList.toggle("who_pokemon_imagen_correct");
+            document.getElementById("wrong_check").style.display = "none";
+            document.getElementById("correct_check").style.display = "block";
             setPoints(points + 1);
             updateData();
         } else {
-            alert("Wrong!");
+            setTypedPokemon("");
+            document.getElementById("wrong_check").style.display = "block";
         }
     }
 
@@ -68,7 +71,8 @@ function Play() {
         // Basicamente volvemos a cargar el dato de un pokemon aleatorio
         getSinglePokemonData(randomNumber(1, 1279));
         document.getElementsByClassName("who_pokemon_imagen")[0].classList.remove("who_pokemon_imagen_correct");
-        document.getElementById("typed_pokemon").value = "";
+        setTypedPokemon("");
+        document.getElementById("correct_check").style.display = "none";
     }
 
     // Obtenemos los puntos del usuario actual de firestore
@@ -106,7 +110,9 @@ function Play() {
                 </div>
             </div>
             <div className="d-flex flex-column justify-content-center align-items-center">
-                <p className="pokemon_types_hint who_pokemon_hint_text ">{pokemonLetters[0]}-{pokemonLetters[1]}-{pokemonLetters[2]}-{pokemonLetters[3]}</p>
+                <p className="pokemon_types_hint who_pokemon_hint_title">6 first letters</p>
+                <p className="pokemon_types_hint who_pokemon_hint_text">{pokemonLetters[0]}{pokemonLetters[1]}{pokemonLetters[2]}{pokemonLetters[3]}{pokemonLetters[4]}{pokemonLetters[5]}</p>
+                <p className="pokemon_types_hint who_pokemon_hint_title">Type/s</p>
                     <div className="d-flex justify-content-center align-items-center">
                     {pokemonTypes.map((type) => {
                         return (
@@ -115,8 +121,10 @@ function Play() {
                     })}
                 </div>
             </div>
+            <h3 className="fs-3 mt-2 mb-5 p-3" id="wrong_check">Try again!</h3>
+            <h3 className="fs-3 mt-2 mb-5 p-3" id="correct_check">Correct!</h3>
             <div className="d-flex justify-content-center align-items-center gap-3">
-                <input id="typed_pokemon" className="who_pokemon_input fs-3" type="text" placeholder="Type the pokemon name..." value={typedPokemon} onChange={(e) => setTypedPokemon(e.target.value)}/>
+                <input id="typed_pokemon" className="who_pokemon_input fs-3" type="text" placeholder="Type the pokemon name..." value={typedPokemon} onChange={(e) => setTypedPokemon(e.target.value)} autoComplete="off"/>
                 <button className="who_pokemon_check_button fs-3" onClick={(e) => checkIfCorrectAnswer(e)}>Check</button>
                 <button className="who_pokemon__ng_button fs-3" onClick={refresh}>New game</button>
             </div>

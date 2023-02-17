@@ -71,7 +71,7 @@ function Header(){
                     
                     <img referrerPolicy="no-referrer" width="50" height="50" className="d-inline-block align-text-top me-4 rounded-circle" alt="user photo" src={userPhoto}/>
                     <span id="userMessage" className="navbar-text">
-                        Bienvenido <span id="userEmail">{username.split('@')[0]}</span>
+                        Welcome <span id="userEmail">{username.split('@')[0]}</span>
                     </span>
                     <div className="d-flex gap-4">
                         <i className="fa-solid fa-right-to-bracket" onClick={handleLogout}></i>
@@ -101,8 +101,8 @@ function Header(){
                 </ul>
                 
                 <div className="d-flex gap-4">
-                    <Link to="/login" className="btn fs-3" type="submit">Sign In</Link>
-                    <Link to="/signup" className="btn fs-3" type="submit">Get Started</Link>
+                    <Link to="/login" className="btn fs-3" type="submit">Log In</Link>
+                    <Link to="/signup" className="btn fs-3" type="submit">Sign Up</Link>
                 </div>
             </div>
             </div>

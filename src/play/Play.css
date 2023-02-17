@@ -111,11 +111,19 @@ h1.play_title, h2.play_subtitle {
 }
 
 p.who_pokemon_hint_text{
-    color: var(--yellow);
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.2rem;
+}
+
+p.who_pokemon_hint_title{
+    color: var(--yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .correct{
@@ -126,6 +134,20 @@ p.who_pokemon_hint_text{
 .incorrect{
     display: none;
     color: var(--black);
+}
+
+#wrong_check{
+    background-color: #ee1515;
+    color: white;
+    border-radius: 5%;
+    display: none;
+}
+
+#correct_check{
+    background-color: lightgreen;
+    color: var(--black);
+    border-radius: 5%;
+    display: none;
 }
 
 .who_pokemon_input{

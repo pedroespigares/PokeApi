@@ -27,7 +27,6 @@ function Leaderboard() {
     return(
         <div id="leaderboard">
             <h2 id="leaderboardTitle">Leaderboard</h2>
-            <h3 id="leaderboardSubtitle">Top 10</h3>
 
             <div id="leaderboardTableContainer">
                 <table id="leaderboardTable">
